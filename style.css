@@ -82,9 +82,11 @@ a:active {
 list-style-type: none;
     padding:90px 40%;
 
-
-
 }
+
+
+
+
 
 
 .a1
@@ -195,3 +197,51 @@ address,h3
     top: 600px;
     left: 327px;
 }
+
+#div6
+{
+    height: 328px;
+    width: 71%;
+    background-color: darkgoldenrod;
+    position: absolute;
+    right: 90px;
+    left: 46px;
+    top: 70px;
+    text-align: center;
+
+}
+
+#i1{
+    position: relative;
+    top: 480px;
+    left: 20px;
+    width: 90%;
+    height: 300px;
+
+}
+
+
+iframe {
+    -ms-transform:scale(0.80);
+    -moz-transform:scale(0.80);
+    -o-transform: scale(0.80);
+    -webkit-transform: scale(0.80);
+    transform:scale(0.80);
+
+}
+iframe {
+    position: relative;
+    top: -112px;
+    left: -157px;
+    /* right: 888px; */
+    height: 1118px;
+    width: 1561px;
+}
+/*#wrapper {
+    overflow:hidden;
+    border:1px solid orange;
+    height:722px;
+    width:662px;
+}*/
+
+
