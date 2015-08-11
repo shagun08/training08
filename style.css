@@ -1,0 +1,197 @@
+body {
+    background-color: bisque;
+
+
+}
+
+#div1
+{
+    height: 75px;
+    width: 100%;
+    border-radius: 10px;
+    background-color: darkgoldenrod;
+
+
+}
+
+ul{
+    list-style-type: none;
+    padding: 30px 50px;
+}
+
+li{
+    display: inline;
+}
+
+a{
+    float: right;
+    text-decoration: none;
+}
+
+a:link {
+    color: wheat;
+}
+a:visited {
+    color: burlywood;
+
+}
+
+a:hover {
+    color: white;
+
+}
+
+a:active {
+    color: antiquewhite;
+
+}
+
+#img1
+{
+    height: 500px;
+    width: 100%;
+    border-radius: 10px;
+}
+
+#div2 {
+    height: 900px;
+    width: 100%;
+    border-radius: 10px;
+}
+#div3 {
+    height: 898px;
+    width: 20%;
+    border-color: goldenrod;
+    background-color: goldenrod;
+    border-radius: 10px;
+    position: absolute;
+}
+#div4
+{
+    height:50px;
+    width:100%;
+    border-radius: 10px;
+    background-color: darkgoldenrod;
+    text-align: center;
+    color: white;
+    padding-top: 10px;
+    font-family: cursive;
+}
+#ul1
+{
+list-style-type: none;
+    padding:90px 40%;
+
+
+
+}
+
+
+.a1
+{
+    clear:both;
+    font-family: cursive;
+    font-size: larger;
+
+}
+.a1:link {
+    color: burlywood;
+}
+.a1:visited {
+    color: brown;
+
+}
+
+.a1:hover {
+    color: white;
+
+}
+
+.a1:active {
+    color: antiquewhite;
+
+}
+
+.b{
+    background: url("images/1.jpg");
+
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.d{
+    height: 1000px;
+    width: 1500px;
+    margin: 30px 30px;
+    background-color: #ffffff;
+    border: 1px solid black;
+    opacity:0.6;
+    filter:alpha(opacity=60);
+}
+
+
+
+.pa
+{
+    margin: 5%;
+    font-weight: bold;
+    color: #000000;
+    font-family: cursive;
+}
+
+.h1
+{
+    font-family: cursive;
+    color: black;
+    text-align: center;
+}
+
+.i{
+    margin: 80px;
+    padding: 20px;
+    border: 1px solid #000000;
+    height: auto;
+    width: auto;
+    float: left;
+    text-align: center;
+}
+
+.i img {
+    display: inline;
+    margin: 5px;
+    border: 1px solid #000000;
+}
+
+.i a:hover img {
+    border: 1px solid brown;
+}
+
+.desc {
+    text-align: center;
+    font-weight: normal;
+    width: 120px;
+    margin: 5px;
+}
+.av
+{
+    padding-top: 80px;
+    padding-left:550px;
+
+}
+address,h3
+{
+    text-align: center;
+}
+
+#div5
+{
+    height: 895px;
+    width: 79%;
+
+    border-radius: 10px;
+    float: right;
+    position: absolute;
+    /* top: -530px; */
+    top: 600px;
+    left: 327px;
+}
