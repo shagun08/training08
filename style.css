@@ -322,3 +322,28 @@ fieldset {
     left: 643px;
     bottom: -121px;
 }
+
+th,tr{
+    text-align: center;
+}
+
+table{
+    position:relative;
+    left:70px;
+    border: 2px groove;
+
+}
+td{
+    border: 2px groove;
+
+}
+table.t01 tr:nth-child(even) {
+    background-color: cadetblue;
+}
+table.t01 tr:nth-child(odd) {
+    background-color: floralwhite;
+}
+table.t01 th {
+    color: white;
+    background-color: black;
+}
