@@ -347,3 +347,12 @@ table.t01 th {
     color: white;
     background-color: black;
 }
+
+
+#d2{
+    border: none;
+    width: 20%;
+    position: relative;
+    left: 93px;
+    /* bottom: -121px; */
+}
