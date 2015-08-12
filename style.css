@@ -23,6 +23,18 @@ li{
     display: inline;
 }
 
+#li1
+{
+    padding-top: 30px;
+    padding-left: 50px;
+    color: burlywood;
+    font-size: larger;
+}
+#li2
+{
+    padding-left: 10px
+}
+
 a{
     float: right;
     text-decoration: none;
@@ -68,18 +80,18 @@ a:active {
 }
 #div4
 {
-    height:50px;
+    height:102px;
     width:100%;
     border-radius: 10px;
     background-color: darkgoldenrod;
     text-align: center;
     color: white;
-    padding-top: 10px;
+    padding-top: 55px;
     font-family: cursive;
 }
 #ul1
 {
-list-style-type: none;
+    list-style-type: none;
     padding:90px 40%;
 
 }
@@ -222,21 +234,22 @@ address,h3
 
 
 iframe {
-    -ms-transform:scale(0.80);
-    -moz-transform:scale(0.80);
-    -o-transform: scale(0.80);
-    -webkit-transform: scale(0.80);
-    transform:scale(0.80);
+    -ms-transform:scale(0.70);
+    -moz-transform:scale(0.70);
+    -o-transform: scale(0.70);
+    -webkit-transform: scale(0.70);
+    transform:scale(0.70);
 
 }
 iframe {
     position: relative;
-    top: -112px;
-    left: -157px;
+    top: -52px;
+    left: -6px;
     /* right: 888px; */
-    height: 1118px;
-    width: 1561px;
+    height: 1088px;
+    width: 1252px;
 }
+
 /*#wrapper {
     overflow:hidden;
     border:1px solid orange;
@@ -244,4 +257,68 @@ iframe {
     width:662px;
 }*/
 
+#div7
+{
+    height: 75px;
+    width: 20%;
+    background-color: darkgoldenrod;
+    border-radius: 10px;
 
+}
+
+#a2
+{
+    padding:20px;
+    padding-right: 40%;
+    font-family: cursive;
+    font-size: larger;
+
+}
+#a2:link {
+    color: burlywood;
+}
+#a2:visited {
+    color: brown;
+
+}
+
+#a2:hover {
+    color: white;
+
+}
+
+#a2:active {
+    color: antiquewhite;
+
+}
+
+
+fieldset {
+    /*display: block;
+    margin-left: 2px;
+    margin-right: 2px;*/
+    padding-top: 0.35em;
+    padding-bottom: 0.625em;
+    padding-left: 0.75em;
+    padding-right: 0.75em;
+    border: 2px groove;
+    border-radius: 10px;
+    width: 150px;
+    text-align: center;
+}
+
+#d{
+    border: none;
+
+    width:18%;
+    position:relative;
+    left:600px;
+}
+
+#d1{
+    border: none;
+    width: 18%;
+    position: relative;
+    left: 643px;
+    bottom: -121px;
+}
