@@ -360,7 +360,7 @@ table.t01 th {
 }
 .t{
     position: absolute;
-    top: 200px;
+    top: 50px;
     left: 0;
     width: 100%;
     color: white;
@@ -368,4 +368,11 @@ table.t01 th {
     font-size: larger;
     font-style: italic;
     text-align: center;
+}
+#g
+{
+    border: none;
+    width: 20%;
+    position: relative;
+    left: 93px;
 }
