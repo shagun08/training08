@@ -5,11 +5,41 @@
  * Created by win8 on 18-Aug-15.
  */
 //Open or create the database
+
+function previewFile() {
+    var preview = document.querySelector('img');
+    var file    = document.querySelector('input[type=file]').files[0];
+    var reader  = new FileReader();
+
+    reader.onloadend = function () {
+        preview.src = reader.result;
+    }
+
+    if (file) {
+        reader.readAsDataURL(file);
+    } else {
+        preview.src = "";
+    }
+}
+
+
+var genders = document.getElementsByName("g");
+
+for(var i = 0; i < genders.length; i++) {
+    if(genders[i].checked == true) {
+        selectedGender = genders[i].value;
+        window.alert("Category is:"+selectedGender);
+    }
+}
+
+
+
+
 var db=openDatabase('contacts','1.0','my contacts app', 2 * 1024 * 1024);
 
 //Initialize the database
 db.transaction(function(tx) {
-    tx.executeSql('CREATE TABLE IF NOT EXISTS contacts(id integer primary key autoincrement, firstname, lastname, phonenumber)');
+    tx.executeSql('CREATE TABLE IF NOT EXISTS contacts(id integer primary key autoincrement, firstname, lastname, phonenumber,category)');
 });
 
 function addContact() {
@@ -17,8 +47,10 @@ function addContact() {
     var inputLastName=document.getElementById("lastname").value;
     var inputPhoneNumber=document.getElementById("phonenumber").value;
 
+    var cat = document.getElementsById('cat').value;
+
     db.transaction(function(tx) {
-        tx.executeSql('INSERT INTO contacts(firstname,lastname,phonenumber) VALUES (?,?,?)',[inputFirstName,inputLastName,inputPhoneNumber], function(tx, results) {
+        tx.executeSql('INSERT INTO contacts(firstname,lastname,phonenumber) VALUES (?,?,?,?)',[inputFirstName,inputLastName,inputPhoneNumber,cat], function(tx, results) {
             //Create the row and its cells
             var contactRow=document.createElement("tr");
             var id=document.createElement("td");

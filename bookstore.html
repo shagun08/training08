@@ -9,31 +9,42 @@
 <body class="b">
 <div class="d">
     <h1 class="h1">Book Info</h1>
-<div id="container">
-    <section id="input">
-        <h1>Add Books</h1>
-        <label>Id: <input type="text" name="i" id="i" /></label>
-        <label>Img: <input class="classhere" type="file" name="logo" id="logo" /><div class="imagearea"></div>
-        </label>
-        <label>Book name: <input type="text" name="firstname" id="firstname" /></label>
-        <label>Author: <input type="text" name="lastname" id="lastname" /></label>
-        <label>Price : <input type="text" name="phonenumber" id="phonenumber" /></label>
-        <button onclick="addContact()">Add</button>
-        <button onclick="updateContact()">Update</button>
+    <div id="container">
+        <section id="input">
+            <h1>Add Books</h1>
+            <label>Id: <input type="text" name="i" id="i" /></label>
+            <label>Img: <input type="file" onchange="previewFile()"><br>
+                <img src="" height="200" alt="Image preview...">
+            </label>
+            <label>Book name: <input type="text" name="firstname" id="firstname" /></label>
+            <label>Author: <input type="text" name="lastname" id="lastname" /></label>
+            <label>Price : <input type="text" name="phonenumber" id="phonenumber" /></label>
+            <div id="g">
+                Category:<br>
+                <label>
+                    <input type="radio" name="g" value="epic" id="epic" >Epic
+                    <br>
+                </label>
+                <label>
+                    <input type="radio" name="g" value="literature" id="literature" checked >Literature
+                    <br></label>
+                <br></div>
+            <button onclick="addContact()">Add</button>
+            <button onclick="updateContact()">Update</button>
 
-    </section>
-    <section id="output">
-        <h1>View Books</h1>
-        <button onclick="listContacts()">View All</button>
-        <table id="contacts" border="1" cellspacing="0" style="width:80%">
-            <th>Id</th>
+        </section>
+        <section id="output">
+            <h1>View Books</h1>
+            <button onclick="listContacts()">View All</button>
+            <table id="contacts" border="1" cellspacing="0" style="width:80%">
+                <th>Id</th>
 
-            <th>Bookname</th>
-            <th>Author</th>
-            <th>Price</th>
-        </table>
-    </section>
-</div>
+                <th>Bookname</th>
+                <th>Author</th>
+                <th>Price</th>
+            </table>
+        </section>
     </div>
+</div>
 </body>
 </html>
